@@ -1,0 +1,152 @@
+.container {
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+}
+
+.background {
+  background: none;
+  width: 700px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  margin: 40px;
+  position: relative;
+}
+
+.raiden {
+  background: none;
+  width: 1000px;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.radial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  width: 170%;
+  height: 210vh;
+  overflow: hidden;
+  position: absolute;
+  animation: slow 60s linear 0.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes slow {
+  from {
+    transform: rotate(0deg) translateZ(77px);
+  }
+  to {
+    transform: rotate(360deg) translateZ(77px);
+  }
+}
+
+.floor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+}
+
+.tail {
+  position: absolute;
+  transform: translateZ(-6px);
+}
+
+.BambooHat {
+  position: absolute;
+  transform: translateZ(10px);
+}
+
+.RightLeg {
+  position: absolute;
+  transform: translateZ(-9px);
+}
+
+.LeftLeg {
+  position: absolute;
+  transform: translateZ(1px);
+}
+
+.RightSleeve {
+  position: absolute;
+  transform: translateZ(10px);
+}
+
+.face {
+  position: absolute;
+  transform: translateZ(15px);
+}
+
+.WhiteShirt {
+  position: absolute;
+  transform: translateZ(20px);
+}
+
+.RightArm {
+  position: absolute;
+  transform: translateZ(15px);
+}
+
+.LeftArm {
+  position: absolute;
+  transform: translateZ(35px);
+}
+
+.lightning {
+  position: absolute;
+  animation: pulsate-fwd 0.85s ease-in-out infinite both;
+  animation: pulsate-fwd 0.85s ease-in-out infinite both;
+  transform: translateZ(70px);
+  width: 110%;
+}
+
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    transform: translateZ(35px) scale(1);
+    transform: translateZ(35px) scale(1);
+  }
+  50% {
+    transform: translateZ(35px) scale(1.059);
+    transform: translateZ(35px) scale(1.059);
+  }
+  100% {
+    transform: translateZ(35px) scale(1);
+    transform: translateZ(35px) scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    transform: translateZ(35px) scale(1);
+    transform: translateZ(35px) scale(1);
+  }
+  50% {
+    transform: translateZ(35px) scale(1.05);
+    transform: translateZ(35px) scale(1.05);
+  }
+  100% {
+    transform: translateZ(35px) scale(1);
+    transform: translateZ(35px) scale(1);
+  }
+}
