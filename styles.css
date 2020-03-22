@@ -47,14 +47,15 @@
   animation: slow 60s linear 0.5s;
   animation-iteration-count: infinite;
   transform-origin: 50% 50%;
+  transform: translateZ(-20);
 }
 
 @keyframes slow {
   from {
-    transform: rotate(0deg) translateZ(77px);
+    transform: rotate(0deg) translateZ(-20px);
   }
   to {
-    transform: rotate(360deg) translateZ(77px);
+    transform: rotate(360deg) translateZ(-20px);
   }
 }
 
